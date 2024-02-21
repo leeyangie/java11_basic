@@ -1,0 +1,47 @@
+package org.kh.site2;
+
+public class Operation7 {
+	public static void main(String[] args) {
+		int a = 20;
+		int b = 15;
+		int tmp;	//임시기억저장소
+		a += b;
+		b -= a;
+		System.out.println(a);
+		System.out.println(b);
+		//a,b값 맞교환 
+		tmp = a;
+		a = b; 
+		b = tmp;
+		System.out.println(a);
+		System.out.println(b);
+		//비트연산자 &, |, ~(complement), ^(XOR), >>, << 
+		int x = 0b01101;
+		int y = 0b01011;
+		System.out.println("x="+Integer.toBinaryString(x));
+		System.out.println("y="+Integer.toBinaryString(y));
+		System.out.println(Integer.toBinaryString(x & y));
+		System.out.println(Integer.toBinaryString(x | y));
+		System.out.println(Integer.toBinaryString(x ^ y)); 	//XOR 배타적 
+		System.out.println(Integer.toBinaryString(~x));	//not int 32비트값으로 반대인 부정값 
+		System.out.println(Integer.toBinaryString(x >> 2)); //나누기 곱하기 개념
+		System.out.println(Integer.toBinaryString(x >>> 2));
+		System.out.println(Integer.toBinaryString(x << 2));
+		System.out.println(x << 2);
+		
+		// 대입연산자
+		int i = 25;
+		int j = 30;
+		i &= j; // i = i & j
+		System.out.println(i);
+		i = 25;
+		i |= j;
+		System.out.println(i);
+		j >>= 2;
+		System.out.println(j);
+		
+		int k = 0b11111101;
+		System.out.println(k);
+	}
+
+}

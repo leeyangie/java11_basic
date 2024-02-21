@@ -1,0 +1,17 @@
+package org.kh.site2;
+
+public class Operation7 {
+	public static void main(String[] args) {
+		int a = 20;
+		int b = 15;
+		int tmp;	//임시기억저장소
+		a += b;
+		b -= a;
+		//a,b값 맞교환 
+		tmp = a;
+		a = b; 
+		b = tmp;
+		System.out.println(a);
+	}
+
+}
